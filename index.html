@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="footers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
-    
+    <script>
+      function triangleclick(){
+        document.getElementById("navbar").style.display="flex"
+      }
+
+
+
+    </script>
 </head>
 <body>
   <div class="page-container">
-    <header class="navbar">
+    <header class="navbar" id="navbar">
       <div class="logo">
       <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <defs>
@@ -66,7 +73,9 @@
     <div class="div-text">
       <p>UI/UX Designer</p>
       <h1>Hello<br>There I am<br><span>Goh Yoon Long</span><br>龙</h1>
-      
+      <a href="#about">
+        <button class="triangle" onclick="triangleclick()"></button>
+      </a>
         
     </div>
     <img class="div-photo" src="images/selfs.png">
@@ -74,13 +83,11 @@
    
 </div>
 
-<div class="div-container">
-  <a href="#about">
-    <div class="triangle"></div>
-  </a>
+<div id="about" class="div-container">
+  
     
   <div class="div-text">
-   
+    <h1></h1>
 
       
   </div>
@@ -103,15 +110,7 @@
     <div class="triangle"></div>
   </a> -->
   <!-------------about----------->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <h1>Heheha</h1>
-        </div>
-      </div>
-    </div>
-  </div>
+
   </div>
   <footer>
     <div class="footerscontainer">

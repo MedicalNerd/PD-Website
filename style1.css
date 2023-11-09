@@ -25,12 +25,12 @@ body{
     left:0;
     width: 100%;
     padding: 0 20px;
-    background: blueviolet;
-    display:flex;
+    /*display:flex;*/
     justify-content: space-between;
     align-items: center;
-    /* position: fixed ; */
+    position: fixed;
     z-index: 100;
+    display:none;
 }
 svg {
     width: 5.5rem;
@@ -73,12 +73,9 @@ svg {
     
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    background: black;
+.div-photo{
+    border-radius: 50%;
+    
 }
 
 .header2 {
@@ -135,8 +132,7 @@ svg {
 }
 
 .triangle {
-    margin-top: 70px;
-    margin-left: -250px;
+    margin-top: 50px;
     width: 40px;
     height: 40px;
     background: white;
@@ -169,7 +165,7 @@ svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 4%;
+    margin-top: 10%;
     /* text-align: center; */
     transition: all 2s;
     color:#fff;
@@ -182,7 +178,7 @@ svg {
 .div-photo {
     width: 28rem;
     /* object-fit: cover; */
-    margin: 0 15px;
+    margin: 0 10px;
     /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgb(0, 0, 0); */
 }
 
@@ -190,6 +186,7 @@ svg {
     width: 28rem;
     z-index: 0;
     height: 28rem;
+    margin: 0 10px;
     /* margin-right: -10%; */
     border-radius: 0px 20px 20px 0px;
 }
