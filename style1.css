@@ -78,8 +78,8 @@ svg {
 
 
 .header-text{
-    margin-left: 30%;
-        
+    margin:auto auto;
+    width:50%;
     font-size: 30px;
     color:white;
 }
