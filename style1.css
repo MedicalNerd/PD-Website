@@ -12,10 +12,15 @@ html{
 body{
     min-height: 100vh;
     background-color: black;
+    /* display: inline-block; */
 }
 
-.header{
-    position: fixed;
+.page-container {
+    overflow: hidden;
+}
+
+.navbar{
+    /* position: fixed; */
     top: 0;
     left:0;
     width: 100%;
@@ -24,7 +29,7 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed ;
+    /* position: fixed ; */
     z-index: 100;
 }
 svg {
@@ -38,7 +43,7 @@ svg {
 .logo:hover {
     animation: pulse 1s infinite; /* Apply the pulse animation on hover */
 }
-.navbar a {
+.navlinks a {
     position: relative;
     font-size: 18px;
     color:white;
@@ -46,7 +51,7 @@ svg {
     text-decoration: none;
     margin-left: 40px;
 }
-.navbar a::before{
+.navlinks a::before{
     content: '';
     position: absolute;
     top: 100%;
@@ -56,7 +61,7 @@ svg {
     background: #fff;
     transition: 0.5s;
 }
-.navbar a:hover::before{
+.navlinks a:hover::before{
     width: 100%;
 } 
 
@@ -76,13 +81,50 @@ svg {
     background: black;
 }
 
+.header2 {
+    margin:auto auto;
+    height: auto;
+    /* display: block; */
+    /* margin-top: 500px; */
+    /* width:50%; */
+    font-size: 30px;
+    color:white;
+}
 
-.header-text{
+.header-text {
+    width: 45%;
+    float: left;
+}
+
+.header-photo {
+    width: 45%;
+    float: right;
+}
+
+.header-photo img {
+    width: 75%;
+}
+
+/* .header-text{
     margin:auto auto;
     width:50%;
     font-size: 30px;
     color:white;
+} */
+
+/* .header-text {
+    float: left;
 }
+
+.header-photo {
+    /* width: 15%; */
+    /* float: right; */
+/* } */
+
+/* .header-photo img { */
+    /* width: 50%; */
+/* } */
+
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
@@ -111,11 +153,47 @@ svg {
     background: blueviolet;
 }
 .container {
-    width: 100vw; /* 100% of the viewport width */
-    height: auto; /* Automatically adjust the height to fit content */
+    width: 100vw;
+    height: auto;
+    /* margin: auto auto; */
+    margin: auto 50%;
     border: 1px solid #000; /* Adding a border for visual separation */
-    margin: 10px; /* Add margin for spacing */
 }
 .text-yes{
     color:white;
+}
+
+
+
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    /* text-align: center; */
+    transition: all 2s;
+}
+
+.div-photo {
+    width: 28rem;
+    /* object-fit: cover; */
+    margin: 0 15px;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgb(0, 0, 0); */
+}
+
+.div-text {
+    width: 28rem;
+    z-index: 0;
+    height: 28rem;
+    /* margin-right: -10%; */
+    border-radius: 0px 20px 20px 0px;
+}
+
+.div-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color:white;
+}
+.div-text h1 span{
+    color:blueviolet
 }
