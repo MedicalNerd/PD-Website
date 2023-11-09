@@ -12,6 +12,14 @@
       function triangleclick(){
         document.getElementById("navbar").style.display="flex"
       }
+      window.addEventListener("scroll", function(){
+        if(window.scrollY==0){
+          document.getElementById("navbar").style.display="none"
+        }
+        else{
+          document.getElementById("navbar").style.display="flex"
+        }
+});
 
 
 
@@ -57,7 +65,7 @@
         </svg>
       </div>
       <nav class="navlinks">
-          <a href="home.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="#">Portfolio</a>
           <a href="#">About</a>
           <a href="contact.html">Contact</a>
@@ -74,7 +82,8 @@
       <p>UI/UX Designer</p>
       <h1>Hello<br>There I am<br><span>Goh Yoon Long</span><br>龙</h1>
       <a href="#about">
-        <button class="triangle" onclick="triangleclick()"></button>
+    
+        <button class="glow-on-hover" type="button" onclick="triangleclick()">HOVER ME, THEN CLICK ME!</button>
       </a>
         
     </div>
@@ -82,12 +91,13 @@
     
    
 </div>
-
+<br></br>
+<br></br>
 <div id="about" class="div-container">
   
     
-  <div class="div-text">
-    <h1></h1>
+  <div class="div-text" id="aboutme">
+    <h1>Hello I love Furina</h1>
 
       
   </div>
