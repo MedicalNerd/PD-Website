@@ -322,23 +322,21 @@ svg {
     height: 100%;
     border-radius: 15px;
     background: rgb(189, 5, 250,0.6) ;
-  
     transition: 0.5s;
     opacity: 0;
 }
 .card-info {
     position: relative;
     z-index: 3;
-    color: black;
-    opacity: 0;
-    transform: translateY(5px);
+    color: white;
+    opacity: 1;
+    transform: translateY(0px);
     transition: 0.5s;
 }
 
 .card-info p {
     letter-spacing: 1px;
     font-size: 15px;
-    margin-top: 8px;
 }
 .card-info:hover {
     opacity: 1;
