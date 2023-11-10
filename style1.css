@@ -178,18 +178,27 @@ svg {
 .div-photo {
     width: 28rem;
     /* object-fit: cover; */
+    height:28rem;
     margin: 0 10px;
+    transition: 0.5s ease-in-out;
     /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgb(0, 0, 0); */
+}
+.div-photo:hover{
+    transform: translateY(20px);
+}
+.div-photo::before{
+    
 }
 
 .div-text {
     width: 28rem;
     z-index: 0;
-    height: 28rem;
+    height: 34rem;
     margin: 0 10px;
     /* margin-right: -10%; */
     border-radius: 0px 20px 20px 0px;
 }
+
 
 .div-text h1{
     font-size: 60px;
@@ -205,8 +214,9 @@ svg {
     margin-top: 20px;
     border: none;
     outline: none;
-    color: #111;
-    background: whitesmoke;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -231,7 +241,7 @@ svg {
 }
 
 .glow-on-hover:active {
-    color: whitesmoke;
+    color: transparent;
 }
 
 .glow-on-hover:active:after {
@@ -248,7 +258,7 @@ svg {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: whitesmoke;
+    background: transparent;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -260,6 +270,12 @@ svg {
     100% { background-position: 0 0; }
 }
 
+#aboutme{
+    margin-top: 40px;
+
+}
+
 #aboutme p{
-    text-align: center;
+    text-align: left;
+    font-size: 24px;
 }
