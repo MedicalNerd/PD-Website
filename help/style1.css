@@ -187,19 +187,6 @@ svg {
 .div-photo:hover{
     transform: translateY(20px);
 }
-.div-photo-about {
-    width: 28rem;
-    /* object-fit: cover; */
-    height:28rem;
-    margin: 10px 25px;
-    transition: 0.5s ease-in-out;
-    border-radius: 100%;
-    margin-top: 100px;
-    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgb(0, 0, 0); */
-}
-.div-photo-about:hover{
-    transform: translateY(20px);
-}
 
 
 .div-text {
@@ -220,18 +207,17 @@ svg {
 .div-text h1 span{
     color:blueviolet;
 }
+.div-text p span{
+    color: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 
-  
 
-  .div-text p span{
-          animation: rainbow 2.5s linear;
-          animation-iteration-count: infinite;
-  }
-  
-  
-  
-  
-  
+}
 .glow-on-hover {
     width: 220px;
     height: 50px;
@@ -381,42 +367,4 @@ svg {
 .card-info button:hover {
     background: dodgerblue;
     color: white;
-}
-@keyframes rainbow{
-    100%,0%{
-        color: rgb(255,0,0);
-    }
-    8%{
-        color: rgb(255,127,0);
-    }
-    16%{
-        color: rgb(255,255,0);
-    }
-    25%{
-        color: rgb(127,255,0);
-    }
-    33%{
-        color: rgb(0,255,0);
-    }
-    41%{
-        color: rgb(0,255,127);
-    }
-    50%{
-        color: rgb(0,255,255);
-    }
-    58%{
-        color: rgb(0,127,255);
-    }
-    66%{
-        color: rgb(0,0,255);
-    }
-    75%{
-        color: rgb(127,0,255);
-    }
-    83%{
-        color: rgb(255,0,255);
-    }
-    91%{
-        color: rgb(255,0,127);
-    }
 }

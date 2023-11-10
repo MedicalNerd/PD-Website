@@ -8,21 +8,11 @@
     <link rel="stylesheet" href="footers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+    
     <script>
-      function triangleclick(){
-        document.getElementById("navbar").style.display="flex"
-      }
-      window.addEventListener("scroll", function(){
-        if(window.scrollY==0){
-          document.getElementById("navbar").style.display="none"
+        window.onload = function() {
+              document.getElementById("navbar").style.display = "flex"
         }
-        else{
-          document.getElementById("navbar").style.display="flex"
-        }
-});
-
-
-
     </script>
 </head>
 <body>
@@ -66,77 +56,56 @@
       </div>
       <nav class="navlinks">
           <a href="index.html">Home</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="about.html">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#about">About</a>
           <a href="contact.html">Contact</a>
           <div class="animation start-home"></div>
       </nav>
   </header>
-
-
-  <!----Containers for the Home Page---->
-  <div class="div-container"> 
-    <div class="div-text">
-      <p>UI/UX Designer</p>
-      <h1>Hello<br>There I am<br><span>Goh Yoon Long</span><br>龙</h1>
-      <a href="#about">
-        <button class="glow-on-hover" type="button" onclick="triangleclick()">Next</button>
-      </a>
-        
+  <!-- NEW -->
+  <div class="card-container">
+    <div class="card">
+        <img  src="images/moduleapp.png" alt="">
+        <div class="card-info">
+          <p>An App displaying my modules made using Java </p>
+          <button>View More</button>
+        </div>        
     </div>
-    </br></br>
-    <img class="div-photo" src="images/selfs.png">
-    
-   
-</div>
-<br></br>
-<br></br>
-</br></br>
-</br></br>
-<div id="about" class="div-container">
-  
-    
-  <div class="div-text" id="aboutme">
-    
-    <h1>More About 龙</h1>
-    <p>I am a DDDD student currently Studying in Republic Polytechnic and is currently awaiting for my transition into Internship!</p>
-    <p>My chinese name has a dragon chinese character in it and I decided to incorperate it into my identity</p>
-    <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
+    <div class="card">
+      <img  src="images/movie.png" alt="">
+    </div>
+    <div class="card">
+      <img  src="images/movielist.png" alt="">
+    </div>
+    <div class="card">
+      <img  src="images/c219L09.png" alt="">
   </div>
-  <img class="div-photo" src="images/Logo.png">
+  <div class="card">
+    <img  src="images/c218L07.png" alt="">
+  </div>
+  <div class="card">
+    <img src="images/T252.png" alt="">
+  </div>
+    </div>
+    <!-- END OF NEW -->
+ </div>
  
-</div>
-<!-- <div class="container" id="container2">
-    <div class="text-yes">
-      <h1>I love Furina</h1>
-    </div>
-</div>
-<div class="container" id="container3">
-</div>
-<div class="container" id="container4">
 
-    
-</div> 
-  
-  <a href="#about">
-    <div class="triangle"></div>
-  </a> -->
-  <!-------------about----------->
-
-  </div>
+ 
+ 
   <footer>
     <div class="footerscontainer">
         <div class="socialIcons">
             <a href="https://github.com/MedicalNerd"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
-            <a href="mailto:gohyoonlong@gmail.com"><i class="fa-solid fa-at" style="color: #ffffff;"></i></a>
-            <a href="https://www.linkedin.com/in/goh-yoon-long-1ab995238/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+            <a href=""><i class="fa-solid fa-at" style="color: #ffffff;"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
         </div>
         <div class="footerNav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Contact Me</a></li>
             </ul>
         </div>
     </div>
@@ -146,5 +115,3 @@
 
 </body>
 </html>
-
-

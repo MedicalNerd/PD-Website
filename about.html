@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
     <script>
-      function triangleclick(){
-        document.getElementById("navbar").style.display="flex"
-      }
-      window.addEventListener("scroll", function(){
-        if(window.scrollY==0){
-          document.getElementById("navbar").style.display="none"
-        }
-        else{
+        function triangleclick(){
           document.getElementById("navbar").style.display="flex"
         }
-});
-
-
-
-    </script>
+        window.addEventListener("scroll", function(){
+          if(window.scrollY==0){
+            document.getElementById("navbar").style.display="none"
+          }
+          else{
+            document.getElementById("navbar").style.display="flex"
+          }
+  });
+  
+  
+  
+      </script>
 </head>
 <body>
   <div class="page-container">
@@ -77,12 +77,12 @@
   <!----Containers for the Home Page---->
   <div class="div-container"> 
     <div class="div-text">
-      <p>UI/UX Designer</p>
-      <h1>Hello<br>There I am<br><span>Goh Yoon Long</span><br>龙</h1>
-      <a href="#about">
-        <button class="glow-on-hover" type="button" onclick="triangleclick()">Next</button>
-      </a>
-        
+      <h1>Who am I?</h1>
+      <p>Hello There I am<br><span>Goh Yoon Long</span><br>a Student studying at Republic Polytechnic currently in the<br>
+        <span>Digital Design Development Diploma</span>.</p>   
+        <a href="#about">
+            <button class="glow-on-hover" type="button" onclick="triangleclick()">Next</button>
+          </a> 
     </div>
     </br></br>
     <img class="div-photo" src="images/selfs.png">
@@ -98,12 +98,14 @@
     
   <div class="div-text" id="aboutme">
     
-    <h1>More About 龙</h1>
-    <p>I am a DDDD student currently Studying in Republic Polytechnic and is currently awaiting for my transition into Internship!</p>
-    <p>My chinese name has a dragon chinese character in it and I decided to incorperate it into my identity</p>
-    <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
+    <h1>More About Me!</h1>
+    <p>On my free time I learn how to do some coding and enjoy some gaming too!</p>
+    <p>I am proficient in<br><span>adobe illustrator,Python,<br>Java,HTML,CSS,MySql</span><br>and a few more!</p>
+    <p>A few games I like to play would be FPS shooters like Rainbow Six Siege, Counter Strike 2, Valorant</p>
+    
   </div>
-  <img class="div-photo" src="images/Logo.png">
+  <br></br>
+  <img class="div-photo-about" src="images/chris-ried-ieic5Tq8YMk-unsplash.jpg">
  
 </div>
 <!-- <div class="container" id="container2">
@@ -146,5 +148,3 @@
 
 </body>
 </html>
-
-
