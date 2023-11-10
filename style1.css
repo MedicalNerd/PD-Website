@@ -294,16 +294,37 @@ svg {
     
 .card{
     text-align: center;
-    
+    transition: 0.5s ease-out;
     width: 30%;
     height: 25rem;
     margin: 12px;
     background-color: rgb(101, 190, 235);
-    transition: all 200ms ease;
+
     border-radius: 20px;
 }
 .card img{
     width:100%;
     height:100%;
     border-radius: 20px;
+    
+   
+}
+.card:hover {
+    transform: translateY(20px);
+}
+.card:hover:before {
+    opacity: 1;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
 }
