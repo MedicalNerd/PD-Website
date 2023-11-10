@@ -329,9 +329,9 @@ svg {
 .card-info {
     position: relative;
     z-index: 3;
-    color: white;
+    color: black;
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(5px);
     transition: 0.5s;
 }
 
@@ -339,6 +339,10 @@ svg {
     letter-spacing: 1px;
     font-size: 15px;
     margin-top: 8px;
+}
+.card-info:hover {
+    opacity: 1;
+    transform: translateY(0px);
 }
 .card-info button {
     padding: 0.6rem;
