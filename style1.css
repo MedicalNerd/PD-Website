@@ -12,6 +12,7 @@ html{
 body{
     min-height: 100vh;
     background-color: black;
+    
     /* display: inline-block; */
 }
 
@@ -187,7 +188,7 @@ svg {
     transform: translateY(20px);
 }
 .div-photo::before{
-    
+
 }
 
 .div-text {
@@ -278,4 +279,12 @@ svg {
 #aboutme p{
     text-align: left;
     font-size: 24px;
+}
+.card{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    height: 400px;
+    width: 296px;
+    box-shadow: 0 5px 10px;
 }
