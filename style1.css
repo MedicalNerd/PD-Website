@@ -16,8 +16,9 @@ body{
     /* display: inline-block; */
 }
 
-.page-container {
-    overflow: hidden;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -73,6 +74,7 @@ svg {
     max-width: 300px; /* Adjust the width as needed */
     
 }
+
 
 .div-photo{
     border-radius: 50%;
@@ -306,11 +308,12 @@ svg {
 
 
 /* NEW */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 65rem;
+    width: 100%;
     margin: auto auto;
     padding: 10px;
     margin-top: 100px;
@@ -324,8 +327,9 @@ svg {
     height: 25rem;
     margin: 12px;
     background-color: rgb(101, 190, 235);
-
+    overflow: hidden;
     border-radius: 20px;
+    position: relative;
 }
 .card img{
     width:100%;
@@ -351,24 +355,29 @@ svg {
     opacity: 0;
 }
 .card-info {
-    position: relative;
     z-index: 3;
+    overflow :hidden;
     color: white;
     opacity: 1;
-    transform: translateY(0px);
+    /* transform: translateY(0px); */
     transition: 0.5s;
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin: auto auto;
 }
 
 .card-info p {
     letter-spacing: 1px;
     font-size: 15px;
 }
-.card-info:hover {
+/*.card-info:hover {
     opacity: 1;
-    transform: translateY(0px);
-}
+    /* transform: translateY(0px); 
+}*/
 .card-info button {
     padding: 0.6rem;
+    margin-top: 50px;
     outline: none;
     border: none;
     border-radius: 3px;
@@ -382,6 +391,11 @@ svg {
     background: dodgerblue;
     color: white;
 }
+
+.card:hover .card-info {
+    display: block;
+}
+
 @keyframes rainbow{
     100%,0%{
         color: rgb(255,0,0);
