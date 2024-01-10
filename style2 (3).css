@@ -219,24 +219,8 @@ svg {
     margin-top: 20px;
     color:white;
 }
-.div-text h1 .name{
+.div-text h1 span{
     color:blueviolet;
-}
-
-.china {
-    transform: translateX(-250px);
-    display: inline-block;
-    animation: fly-in 1s forwards;
-}
-
-@keyframes fly-in {
-    from {
-        transform: translateX(-250px);
-    }
-
-    to {
-        transform: translateX(0px);
-    }
 }
 
   
@@ -325,104 +309,111 @@ svg {
 
 /* NEW */
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    margin: auto auto;
-    padding: 10px;
-    margin-top: 100px;
-    margin-left: 120px;
-}
-    
-.card{
-    text-align: center;
-    transition: 0.5s ease-out;
-    width: 30%;
-    height: 25rem;
-    margin: 12px;
-    background-color: rgb(101, 190, 235);
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-}
-.card img{
-    width:100%;
-    height:100%;
-    border-radius: 20px;
-}
-.card:hover {
-    transform: translateY(5px);
-}
-.card:hover:before {
-    opacity: 1;
-}
 
-.card:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background: rgb(189, 5, 250,0.6) ;
-    transition: 0.5s;
-    opacity: 0;
-}
-.card-info {
-    z-index: 3;
-    overflow :hidden;
-    color: white;
-    opacity: 1;
-    /* transform: translateY(0px); */
-    transition: 0.5s;
-    display: none;
-    position: absolute;
-    top: 50%;
-    margin: auto auto;
-}
 
-.card-info p {
-    letter-spacing: 1px;
-    font-size: 15px;
-}
-
-.card-info button {
-    padding: 0.6rem;
-    margin-top: 50px;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    background: white;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-.card-info button:hover {
-    background: dodgerblue;
-    color: white;
-}
 
 .slider{
+    /*  */
+    /*  */
     position: relative;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 370px;
     overflow: hidden;
 }
 .item{
     position: absolute;
-    width: 200px;
+    
+    /* width: 200px; */
     height: 320px;
     text-align: justify;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     transition: 0.5s;
-    left: calc(50% - 110px);
+    /* left: calc(37.5%); */
     top: 0;
+    overflow: hidden;
 }
+
+.item-info-s {
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.8);
+    opacity: 0;
+    transition: all 350ms ease;
+    top: 100px;
+    padding-top: 60%;
+    overflow-x: hidden;
+}
+.item-info-s h4{
+    color: red;
+}
+.item-info-b h3 , .item-info-b2 h3{
+    color: red;
+}
+.item-info-b {
+    width: 100%; 
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.8);
+    opacity: 0;
+    transition: all 350ms ease;
+    top: 100px;
+    padding-top: 22%;
+    overflow-x: hidden;
+}
+.item-info-b2 {
+    width: 100%; 
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.8);
+    opacity: 0;
+    transition: all 350ms ease;
+    top: 100px;
+    padding-top: 17%;
+    overflow-x: hidden;
+}
+
+.item:hover .item-info-s  {
+    top: 0;
+    opacity: 1;
+    
+}
+.item:hover .item-info-b  {
+    top: 0;
+    opacity: 1;
+
+}
+.item:hover .item-info-b2  {
+    top: 0;
+    opacity: 1;
+
+}
+
+
+.item img {
+    /* width: 100%; */
+    /* padding: 20px; */
+    height: 100%;
+    object-fit: cover;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
 #next, #prev{
     position: absolute;
     top: 40%;
@@ -433,10 +424,38 @@ svg {
     font-family: monospace;
     font-weight: bold;
     left: 400px;
+    cursor: pointer;
+    z-index: 1000;
 }
 #next{
     left: unset;
     right: 400px;
+}
+
+.item-info-button {
+    padding: 15px;
+    width: 50%;
+}
+
+.work-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index:10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    width: 50%;
+    /* height: 40%; */
+    background-color: white;
+}
+
+.modal-title {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -474,6 +493,10 @@ svg {
         margin-bottom: 10px;
     }    
 
+    .slider {
+        /* width: 95% */
+    }
+
     .div-text {
         text-align: center;
         width: 75%;
@@ -490,6 +513,15 @@ svg {
 
     .div-text a button {
         font-size: 20px;
+    }
+
+    .slider-padding {
+    padding-top: 250px;
+    }
+
+    .item img {
+        /* width: 95%; */
+        height: 75%;
     }
 
     .navbar {
@@ -526,6 +558,7 @@ svg {
         text-align: center;
     }
 }
+
 
 @keyframes rainbow{
     100%,0%{

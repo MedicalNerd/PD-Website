@@ -219,24 +219,8 @@ svg {
     margin-top: 20px;
     color:white;
 }
-.div-text h1 .name{
+.div-text h1 span{
     color:blueviolet;
-}
-
-.china {
-    transform: translateX(-250px);
-    display: inline-block;
-    animation: fly-in 1s forwards;
-}
-
-@keyframes fly-in {
-    from {
-        transform: translateX(-250px);
-    }
-
-    to {
-        transform: translateX(0px);
-    }
 }
 
   
@@ -387,7 +371,10 @@ svg {
     letter-spacing: 1px;
     font-size: 15px;
 }
-
+/*.card-info:hover {
+    opacity: 1;
+    /* transform: translateY(0px); 
+}*/
 .card-info button {
     padding: 0.6rem;
     margin-top: 50px;
@@ -405,24 +392,50 @@ svg {
     color: white;
 }
 
+.card:hover .card-info {
+    display: block;
+}
+
+.slider-padding {
+    
+    /* height: 100%; */
+}
+
 .slider{
+    /*  */
+    /*  */
     position: relative;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 370px;
     overflow: hidden;
 }
 .item{
     position: absolute;
-    width: 200px;
+    
+    /* width: 200px; */
     height: 320px;
     text-align: justify;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     transition: 0.5s;
-    left: calc(50% - 110px);
+    /* left: calc(37.5%); */
     top: 0;
 }
+
+.item img {
+    /* width: 100%; */
+    /* padding: 20px; */
+    height: 100%;
+    object-fit: cover;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
 #next, #prev{
     position: absolute;
     top: 40%;
@@ -433,98 +446,12 @@ svg {
     font-family: monospace;
     font-weight: bold;
     left: 400px;
+    cursor: pointer;
+    z-index: 1000;
 }
 #next{
     left: unset;
     right: 400px;
-}
-
-@media only screen and (max-width: 768px) {
-    .div-container {
-        align-items: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    button[type="submit"] {
-        /* display: inline-flex; */
-        width: 100%;
-
-    }
-
-    #about {
-        float: none;
-        /* width: 100%; */
-        flex-wrap: nowrap;
-    }
-
-    #about .div-text {
-        /* width: 100%; */
-    }
-
-    .div-photo {
-        width: 75%;
-        height: 75%;
-        /* margin- */
-        float: none;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 10px;
-    }    
-
-    .div-text {
-        text-align: center;
-        width: 75%;
-        
-    }
-
-    #aboutme p {
-        text-align: center;
-    }
-
-    .div-text h1 {
-        font-size: 50px;
-    }
-
-    .div-text a button {
-        font-size: 20px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        background-color: white;
-    }
-
-    .navbar .logo {
-        margin-top: 10px;
-    }
-
-    .navlinks {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .navlinks a {
-        color: green;
-        margin-left: 0;
-        padding: 10px;
-        border-top: 2px solid green;
-        width: 100%;
-    }
-
-    .navlinks a:nth-child(1) {
-        border-top: none;
-    }
-
-    .footerNav ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 @keyframes rainbow{
