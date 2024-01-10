@@ -16,9 +16,9 @@ const worksInfo = {
     },
     "Name-card":{
         "title": "Name Card",
-        "desc": "I designed this Namecard using illustrator by using some references from the internet about using lines in Typography to create a Y and a L since it is a nickname people I know call me by with the circle around it to add more content to the name card and to have people's attention be focused onto the YL",
-        "images": ["images/Asset 1.png"],
-        "icons":["icons/illustrator.png","icons/html.png"],
+        "desc": "I designed this Namecard using illustrator by using some references from the internet about using lines in Typography to create a Y and a L since it is a nickname people I know call me by with the circle around it to add more content to the name card and to have people's attention be focused onto the YL. The back I used gray as i think it helps dull the background so much to allow the logo and the text  to be highlighted and allow for the audience to focus their attention onto it. Overall my Design is inspired by the more modern design of some namecards and is simple and clean like modern designs in general.",
+        "images": ["images/Asset 1.png","images/Asset 2.png"],
+        "icons":["icons/illustrator.png","icons/photoshop.png"],
     },
     "module-app":{
         "title": "Module App",
