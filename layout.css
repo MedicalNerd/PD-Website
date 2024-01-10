@@ -1,0 +1,113 @@
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins",sans-serif;
+}
+h1 {
+    padding-top: 15px;
+    margin-top: 0px;
+}
+.image-popup {
+    /* display: block; */
+    position: fixed;
+    display: none;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 0px;
+}
+
+#popup {
+    display: none;
+}
+
+.image-popup img {
+    /* width: 33%; */
+    height: 75%;
+}
+
+.image-popup .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.close-button {
+    float: right;
+    font-size: 33px;
+    color: white;
+    margin-right: 33px;
+    margin-top: 33px;
+}
+
+.container .image-popup-text {
+    font-size: 22px;
+    color: white;
+    margin-top: 10px;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.popup {
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.skills-container {
+    display: flex;
+    gap: 25px;
+    
+
+}
+
+p {
+    width: 55%;
+    font-size: 20px;
+}
+
+.skills-container img {
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.gallery {
+    display: grid;
+    
+    /* width: 75%; */
+    /* justify-content: center;
+    align-items: center; */
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 55px;
+}
+
+.gallery img {
+    height: 200px;
+   
+}

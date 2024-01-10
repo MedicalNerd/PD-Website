@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="moduleappcss.css">
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="footers.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
   <script src="portfolio-work.js"></script>
+  <script src="popup.js"></script>
   <title>Details Page</title>
     <!-- Bootstrap CSS -->
-  <script>
-      window.onload = function() {
-            document.getElementById("navbar").style.display = "flex"
-      }
-  </script>
+ 
+  
 </head>
 <body>
     <header class="navbar" id="navbar">
@@ -64,53 +64,48 @@
           <div class="animation start-home"></div>
       </nav>
     </header>
-    <div class="container mt-5" id="descriptions">
-        <div class="row">
-            <div class="col-sm-6">
-                <!-- Rectangle box displaying a photo -->
-                <div class="card border-0">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6" id="yessir">
-                <div class="card border-0">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <br></br>
-    <div class="container mt-5" id="skills">
-        <div class="row">
-            <div class="col-sm-6 ">
-
-                <div class="Skills" id="icon-container">
-
-                </div>
-                <!-- Rectangle box displaying a photo -->
-                
-            </div>
-            <div class="col-sm-2">
-              <div class="gallery" id="gallery">
-               
-                
-              </div>
-              <!-- Rectangle box displaying a photo -->
-              
-          </div>
+    <div id="popup" class="image-popup">
+      <span class="close-button">X</span>
+      <div class="container">
           
-        </div>
+          <img id="image-popup-image" src="images/T252.png">
+          <!-- <span class="image-popup-text">Yoon Long is special</span> -->
+      </div>
     </div>
+    <h1 class="title">TITLE</h1>
+    <br></br>
+        <div class="info-container">
+            <p class="desc"></p>
+            <div class="skills-container" id="skills-container">
+                
+            </div>
+            
+        </div>
+        <div class="gallery" id="gallery">
+
+        </div>
 <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<footer>
+  <div class="footerscontainer">
+    <div class="socialIcons">
+      <a href="https://github.com/MedicalNerd"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+      <a href="mailto:gohyoonlong@gmail.com"><i class="fa-solid fa-at" style="color: #ffffff;"></i></a>
+      <a href="https://www.linkedin.com/in/goh-yoon-long-1ab995238/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+    </div>
+      <div class="footerNav">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</footer>
 </body>
 </html>
 

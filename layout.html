@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="layout.css">
+        <style>
+            h1 {
+                padding-top: 15px;
+                margin-top: 0px;
+            }
+            .image-popup {
+                /* display: block; */
+                position: fixed;
+                display: none;
+                /* display: none; */
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #popup {
+                display: none;
+            }
+
+            .image-popup img {
+                /* width: 33%; */
+                height: 75%;
+            }
+
+            .image-popup .container {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .close-button {
+                float: right;
+                font-size: 33px;
+                color: white;
+                margin-right: 33px;
+                margin-top: 33px;
+            }
+
+            .container .image-popup-text {
+                font-size: 22px;
+                color: white;
+                margin-top: 10px;
+            }
+
+            .close-button {
+                cursor: pointer;
+            }
+
+            .popup {
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                document.getElementById("popup").style.display = "none";
+                console.log(document.getElementById("popup").style.display)
+                console.log("asd");
+
+                document.querySelectorAll(".popup").forEach(function(e) {
+                    e.addEventListener("click", function() {
+                      
+                    document.getElementById("image-popup-image").src = e.getAttribute("src");
+                    document.querySelector(".image-popup").style.display = "block"  
+                    })
+                })
+
+                document.querySelector(".close-button").addEventListener("click", function() {
+                    document.querySelector(".image-popup").style.display = "none"
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <div id="popup" class="image-popup">
+            <span class="close-button">X</span>
+            <div class="container">
+                
+                <img id="image-popup-image" src="images/T252.png">
+                <span class="image-popup-text">Yoon Long is special</span>
+            </div>
+        </div>
+        <h1 class="title">TITLE</h1>
+        <div class="info-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus pellentesque sem, non tempor dui venenatis sed. Nullam non leo eget orci sodales vehicula. Morbi eu metus eget massa facilisis congue. Nulla quis metus malesuada mauris volutpat mollis. Fusce commodo pulvinar sapien, et luctus nunc. In ac nibh id lectus dapibus dignissim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean posuere mattis maximus. Aenean a velit feugiat, scelerisque augue at, pretium ipsum. Praesent a consequat neque. Fusce porttitor dolor neque, a congue ex blandit ac. Morbi a accumsan nunc, quis auctor tortor. Donec egestas mauris ipsum, sed rhoncus lorem maximus rhoncus. Vestibulum enim risus, blandit quis magna at, vestibulum pulvinar augue.</p>
+            <div class="skills-container">
+                <img src="java.svg">
+                <img src="javascript.svg">
+                <img src="illustrator.png">
+            </div>
+        </div>
+        <div class="gallery">
+            <img class="popup" src="images/T252GA.png">
+            <img class="popup" src="images/images/moduleapp.png">
+            <img class="popup"src="images/images/T252GA.png">
+            <img class="popup" src="images/images/T252GA.png">
+            <img  class="popup" src="images/images/T252GA.png">
+            <img  class="popup" src="images/images/T252GA.png">
+            <img  class="popup" src="images/images/T252GA.png">
+            <img class="popup"  src="images/images/T252GA.png">
+            <img class="popup" src="images/images/T252GA.png">
+            <!-- <img src="images/images/T252GA.png"> -->
+        </div>
+    </body>
+
+</html>

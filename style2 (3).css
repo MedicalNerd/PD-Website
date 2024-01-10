@@ -289,7 +289,12 @@ svg {
     top: 0;
     border-radius: 10px;
 }
-
+.prev{
+    display:flex;
+}
+.next{
+    display: block;
+}
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
@@ -353,6 +358,23 @@ svg {
     padding-top: 60%;
     overflow-x: hidden;
 }
+.item-info-s2 {
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.8);
+    opacity: 0;
+    transition: all 350ms ease;
+    top: 100px;
+    padding-top: 40%;
+    overflow-x: hidden;
+}
+.item-info-s2 h4{
+    color: red;
+}
 .item-info-s h4{
     color: red;
 }
@@ -403,7 +425,11 @@ svg {
     opacity: 1;
 
 }
+.item:hover .item-info-s2  {
+    top: 0;
+    opacity: 1;
 
+}
 
 .item img {
     /* width: 100%; */

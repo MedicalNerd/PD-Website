@@ -78,7 +78,11 @@ svg {
 
 .div-photo{
     border-radius: 50%;
-    
+   
+}
+.div-photo-skills {
+    width: 70%;
+    height: 70%;
 }
 
 .header2 {
@@ -212,7 +216,10 @@ svg {
     /* margin-right: -10%; */
     border-radius: 0px 20px 20px 0px;
 }
-
+#programmer{
+    margin-top: 50px;
+    margin-left: 50px;
+}
 
 .div-text h1{
     font-size: 60px;
