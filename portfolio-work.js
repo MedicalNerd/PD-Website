@@ -22,11 +22,53 @@ const worksInfo = {
     },
     "module-app":{
         "title": "Module App",
-        "desc": "During My Android Development Class I designed the background using Adobe Illustrator and import it into Android Studios and used Java to coded it out for each individual sections. Each part of the module page is a different Activity. I would say the  ",
+        "desc": "During My Android Development Class I designed the background using Adobe Illustrator and import it into Android Studios and used Java to coded it out for each individual sections. Each part of the module page is a different Activity. ",
         "images": ["images/moduleapp.png"],
         "icons":["icons/illustrator.png","icons/android-icon.png"],
         "videos":[],
     },
+    "SOI":{
+        "title": "SOI Learning Portal Webpage",
+        "desc": "The SOI Learning Portal is designed to help users find the perfect module to learn. It is done using bootstrap to allow for mobile responsiveness with the color scheme chosen to help contrast with the white text. It also has a book marking feature which when first will display a bookmark footer with the specific module you have bookmark with all of it's details. There is also a dropdown menu for the courses which displays every course there is on the site. The carousel was done to help minimize the amount of course on a screen at once. There is also a notification button which will inform the user if any thing might happen. Full Webpage is displayed on my GitHub! https://medicalnerd.github.io/Code/",
+        "images": ["images/C219L06.png","images/C219L07.png","images/C219L07Noti.png","images/C219L07Drop.png"],
+        "icons":["icons/html.png","icons/css.png"],
+        "videos":[],
+    },
+    "delivery-service-app":{
+        "title": "Delivery App",
+        "desc": "For this Delivery App, I took alot of inspiration from apps like deliveroo, Foodpanda , Grab and Ubereats. There is a home page , review page , product page , product description page, processing page , payment page and a thank you page. The colour scheme is also based on the Flash which explains the design with the lightning bolt in the middle of the wok and wheel also the name wok + wheel = wokeel. If you would like to withness the work the link is here! https://xd.adobe.com/view/564fb8ac-e5e7-48f2-bb6c-9ec57c7c44a3-031c/ ",
+        "images": ["images/C218L07.png","images/C218L07Review.png","images/C218L07Food.png","images/C218L07Display.png","images/C218L07Process.png","images/C218L07Pay.png","images/C218L07TY.png"],
+        "icons":["icons/illustrator.png","icons/photoshop.png","icons/xd.png"],
+        "videos":[],
+    },
+    "world-explore":{
+        "title": "World Xplore Page",
+        "desc": "Using Both HTML + CSS I designed a Travel Page with a video of Sakura Flowers playing in the background with the color scheme representing the beautiful sakura colours of the flowers. The pictures have special hover animation which allows for them to spin and a destination page which will direct users to specific pages describing the countries listed like Japan Thailand and Malaysia. The is also a Contact Us Form which requires input for every column or it will not allow the user to continue. It also involves a Javascript which will display a different background image in mobile mode with a 50% chance of dispaying one image or the other. Do Check the page out on my github! https://medicalnerd.github.io/C219_L05/",
+        "images": ["images/C219L04.png","images/worldXplore.png","images/worldXploreDes.png"],
+        "icons":["icons/html.png","icons/css.png"],
+        "videos":[],
+    },
+    "poster":{
+        "title": "Advertisment Poster",
+        "desc": "I did an Advertisement Poster for a event for my module using Adobe Illustrator to design the shapes and alignning them accordingly to highlight the text/title displayed. The Shapes also help bring a modern design as I was inspired by the shape trend where it looks like a futuristic theme.",
+        "images": ["images/T252Poster.png"],
+        "icons":["icons/illustrator.png","icons/photoshop.png"],
+        "videos":[],
+    },
+    "movie-app":{
+        "title": "Movie Display Application",
+        "desc": "The application uses multiple activites to work in union for a movie list displayer. The first activity is to insert the movie title , genre , year of release and the link to the image that is going to represent the movie like a poster, It also included the age rating there. The second activity has a filter section for the Age Rating and displays the movies that has the specific rating. Clicking on anyone of them will guide to the third activity which allows the user to edit any detail of the movie like it's title age rating and more. It also allows for the deletion of the movie from the list entirely.",
+        "images": ["images/movielist.png"],
+        "icons":["icons/android-icon.png","icons/photoshop.png","icons/illustrator.png"],
+        "videos":["https://youtu.be/hkX1Z4KGXo8?si=-ygCSsHufUjYpoCW"],
+    },
+    "japanese-pamphlet":{
+        "title": "Japanese Pamphlet",
+        "desc": "This Pamphlet was done using software like Adobe Illustrator for the colour scheme and overall design of it like it's placement of pictures, text , Title and Logo. As for photoshop, I used to to crop the images to the perfect sizes and to sketch the overall concept of it sort of like a wireframe. The colour schemes were chosen to fit the theme of Japan as the background is a gradient of the sakura flower with purple and green helping to contrast against the background to ensure the texts are readable. As for the fonts, I decided to use Proxima Nova Bold as it is very legible compared to other fonts in my opinion.",
+        "images": ["images/T252.png"],
+        "icons":["icons/illustrator.png","icons/photoshop.png"],
+        "videos":[],
+    }
 
 }
 
@@ -35,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (worksInfo[id]) {
         document.querySelector(".desc").innerText = worksInfo[id].desc;
         document.querySelector(".title").innerText = worksInfo[id].title;
+
         worksInfo[id].images.forEach((e) => {
             let card = document.createElement("div");
             card.classList.add("card");
@@ -70,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("gallery").appendChild(card);
             
         })
+
        
         
     } else {
