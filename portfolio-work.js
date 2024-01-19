@@ -5,7 +5,6 @@ const worksInfo = {
         "desc": "A Movie Website I designed for my assignment that involves a user creating an account that is saved into an external database which can be called again to login or delete the account. Furthermore,The Design of the website is losely based on Golden Villages Design with a review function that allows the account holder to display their reviews depending on the specific movie and will display their username and the ability to edit and delete their own reviews while not allowing others to change the review.",
         "images": ["images/movie.png","images/C203GAHome.png","images/register.png","images/login.png"],
         "icons":["icons/html.png","icons/PHP-logo.svg.png"],
-        
     }, 
 
     "digital-book-service": {
@@ -22,31 +21,37 @@ const worksInfo = {
     },
     "module-app":{
         "title": "Module App",
-        "desc": "During My Android Development Class I designed the background using Adobe Illustrator and import it into Android Studios and used Java to coded it out for each individual sections. Each part of the module page is a different Activity. ",
-        "images": ["images/moduleapp.png"],
+        "desc": "During My Android Development Class I designed the background using Adobe Illustrator and import it into Android Studios and used Java to coded it out for each individual sections. Each part of the module page is a different Activity. The idea behind it's creation was the snap app and the student portal mobile page where it has a picture of the RP building as a background and using green color palette for it's buttons navbar and more.",
+        "images": ["images/moduleapp.png","images/moduleapp2.png","images/moduleapp3.png","images/moduleapp4.png","images/moduleapp5.png","images/moduleapp6.png","images/moduleapp7.png"],
         "icons":["icons/illustrator.png","icons/android-icon.png"],
         "videos":[],
     },
     "SOI":{
         "title": "SOI Learning Portal Webpage",
-        "desc": "The SOI Learning Portal is designed to help users find the perfect module to learn. It is done using bootstrap to allow for mobile responsiveness with the color scheme chosen to help contrast with the white text. It also has a book marking feature which when first will display a bookmark footer with the specific module you have bookmark with all of it's details. There is also a dropdown menu for the courses which displays every course there is on the site. The carousel was done to help minimize the amount of course on a screen at once. There is also a notification button which will inform the user if any thing might happen. Full Webpage is displayed on my GitHub! https://medicalnerd.github.io/Code/",
+        "desc": "The SOI Learning Portal is designed to help users find the perfect module to learn. It is done using bootstrap to allow for mobile responsiveness with the color scheme chosen to help contrast with the white text. It also has a book marking feature which when first will display a bookmark footer with the specific module you have bookmark with all of it's details. There is also a dropdown menu for the courses which displays every course there is on the site. The carousel was done to help minimize the amount of course on a screen at once. There is also a notification button which will inform the user if any thing might happen. Full Webpage is displayed on my GitHub!",
         "images": ["images/C219L06.png","images/C219L07.png","images/C219L07Noti.png","images/C219L07Drop.png"],
         "icons":["icons/html.png","icons/css.png"],
-        "videos":[],
+        "links": {
+            "gh": "https://medicalnerd.github.io/Code/"
+        }
     },
     "delivery-service-app":{
         "title": "Delivery App",
         "desc": "For this Delivery App, I took alot of inspiration from apps like deliveroo, Foodpanda , Grab and Ubereats. There is a home page , review page , product page , product description page, processing page , payment page and a thank you page. The colour scheme is also based on the Flash which explains the design with the lightning bolt in the middle of the wok and wheel also the name wok + wheel = wokeel. If you would like to withness the work the link is here! https://xd.adobe.com/view/564fb8ac-e5e7-48f2-bb6c-9ec57c7c44a3-031c/ ",
         "images": ["images/C218L07.png","images/C218L07Review.png","images/C218L07Food.png","images/C218L07Display.png","images/C218L07Process.png","images/C218L07Pay.png","images/C218L07TY.png"],
         "icons":["icons/illustrator.png","icons/photoshop.png","icons/xd.png"],
-        "videos":[],
+        "links": {
+            "xd": "https://xd.adobe.com/view/564fb8ac-e5e7-48f2-bb6c-9ec57c7c44a3-031c/"
+        }
     },
     "world-explore":{
         "title": "World Xplore Page",
         "desc": "Using Both HTML + CSS I designed a Travel Page with a video of Sakura Flowers playing in the background with the color scheme representing the beautiful sakura colours of the flowers. The pictures have special hover animation which allows for them to spin and a destination page which will direct users to specific pages describing the countries listed like Japan Thailand and Malaysia. The is also a Contact Us Form which requires input for every column or it will not allow the user to continue. It also involves a Javascript which will display a different background image in mobile mode with a 50% chance of dispaying one image or the other. Do Check the page out on my github! https://medicalnerd.github.io/C219_L05/",
         "images": ["images/C219L04.png","images/worldXplore.png","images/worldXploreDes.png"],
         "icons":["icons/html.png","icons/css.png"],
-        "videos":[],
+        "links": {
+            "gh": "https://medicalnerd.github.io/C219_L05/"
+        }
     },
     "poster":{
         "title": "Advertisment Poster",
@@ -58,9 +63,11 @@ const worksInfo = {
     "movie-app":{
         "title": "Movie Display Application",
         "desc": "The application uses multiple activites to work in union for a movie list displayer. The first activity is to insert the movie title , genre , year of release and the link to the image that is going to represent the movie like a poster, It also included the age rating there. The second activity has a filter section for the Age Rating and displays the movies that has the specific rating. Clicking on anyone of them will guide to the third activity which allows the user to edit any detail of the movie like it's title age rating and more. It also allows for the deletion of the movie from the list entirely.",
-        "images": ["images/movielist.png"],
+        "images": ["images/movielist.png","images/movielist1.png","images/movielist2.png","images/movielist3.png","images/movielist4.png",],
         "icons":["icons/android-icon.png","icons/photoshop.png","icons/illustrator.png"],
-        "videos":["https://youtu.be/hkX1Z4KGXo8?si=-ygCSsHufUjYpoCW"],
+        "links": {
+            "yt": "https://youtu.be/hkX1Z4KGXo8?si=itdQUjjOhg6JQjmh"
+        }
     },
     "japanese-pamphlet":{
         "title": "Japanese Pamphlet",
@@ -111,8 +118,34 @@ document.addEventListener("DOMContentLoaded", () => {
             card.appendChild(image);
        
             document.getElementById("gallery").appendChild(card);
+
+            
             
         })
+
+        if (worksInfo[id].links != undefined) {
+            for (const [key, value] of Object.entries(worksInfo[id].links)) {
+               
+                let anchor = document.createElement("a")
+                anchor.href = value
+                anchor.target = "_blank"
+                
+                let icon = document.createElement("i")
+                icon.classList.add("fa")
+                
+                if (key == "yt") {
+                    icon.classList.add("fa-youtube-play")
+                } else if (key == "gh") {
+                    icon.classList.add("fa-github")
+                } else if (key == "xd"){
+                    icon.classList.add("fa-tablet")
+                }
+
+                icon.classList.add("fa-lg")
+                anchor.appendChild(icon)
+                document.querySelector(".links").appendChild(anchor)
+              }
+        }
 
        
         
