@@ -24,7 +24,9 @@ const worksInfo = {
         "desc": "During My Android Development Class I designed the background using Adobe Illustrator and import it into Android Studios and used Java to coded it out for each individual sections. Each part of the module page is a different Activity. The idea behind it's creation was the snap app and the student portal mobile page where it has a picture of the RP building as a background and using green color palette for it's buttons navbar and more.",
         "images": ["images/moduleapp.png","images/moduleapp2.png","images/moduleapp3.png","images/moduleapp4.png","images/moduleapp5.png","images/moduleapp6.png","images/moduleapp7.png"],
         "icons":["icons/illustrator.png","icons/android-icon.png"],
-        "videos":[],
+        "links": {
+            "yt": "https://youtu.be/4PhYBPt6rOo"
+        }
     },
     "SOI":{
         "title": "SOI Learning Portal Webpage",
