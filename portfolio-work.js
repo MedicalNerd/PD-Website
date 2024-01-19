@@ -4,7 +4,7 @@ const worksInfo = {
         "title": "Movie Website GA",
         "desc": "A Movie Website I designed for my assignment that involves a user creating an account that is saved into an external database which can be called again to login or delete the account. Furthermore,The Design of the website is losely based on Golden Villages Design with a review function that allows the account holder to display their reviews depending on the specific movie and will display their username and the ability to edit and delete their own reviews while not allowing others to change the review.",
         "images": ["images/movie.png","images/C203GAHome.png","images/Register.png","images/Login.png"],
-        "icons":["icons/html.png","icons/PHP-logo.svg.png"],
+        "icons":["icons/html.png","icons/PHP-logo.svg.png","icons/css.png"],
     }, 
 
     "digital-book-service": {
@@ -55,7 +55,7 @@ const worksInfo = {
     },
     "poster":{
         "title": "Advertisment Poster",
-        "desc": "I did an Advertisement Poster for a event for my module using Adobe Illustrator to design the shapes and alignning them accordingly to highlight the text/title displayed. The Shapes also help bring a modern design as I was inspired by the shape trend where it looks like a futuristic theme.",
+        "desc": "I did an Advertisement Poster for a event for my module using Adobe Illustrator to design the shapes and alignning them accordingly to highlight the text/title displayed. The Shapes also help bring a modern design as I was inspired by the shape trend where it looks like a futuristic theme. The color scheme was a blend of orange and purple as both of them when used as a gradient is very vibrant making it eye appealing.",
         "images": ["images/T252Poster.png"],
         "icons":["icons/illustrator.png","icons/photoshop.png"],
         "videos":[],
