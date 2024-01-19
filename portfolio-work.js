@@ -3,7 +3,7 @@ const worksInfo = {
     "movie-website": {
         "title": "Movie Website GA",
         "desc": "A Movie Website I designed for my assignment that involves a user creating an account that is saved into an external database which can be called again to login or delete the account. Furthermore,The Design of the website is losely based on Golden Villages Design with a review function that allows the account holder to display their reviews depending on the specific movie and will display their username and the ability to edit and delete their own reviews while not allowing others to change the review.",
-        "images": ["images/movie.png","images/C203GAHome.png","images/register.png","images/login.png"],
+        "images": ["images/movie.png","images/C203GAHome.png","images/Register.png","images/Login.png"],
         "icons":["icons/html.png","icons/PHP-logo.svg.png"],
     }, 
 
