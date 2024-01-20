@@ -39,7 +39,7 @@ const worksInfo = {
     },
     "delivery-service-app":{
         "title": "Delivery App",
-        "desc": "For this Delivery App, I took alot of inspiration from apps like deliveroo, Foodpanda , Grab and Ubereats. There is a home page , review page , product page , product description page, processing page , payment page and a thank you page. The colour scheme is also based on the Flash which explains the design with the lightning bolt in the middle of the wok and wheel also the name wok + wheel = wokeel. If you would like to withness the work the link is here! https://xd.adobe.com/view/564fb8ac-e5e7-48f2-bb6c-9ec57c7c44a3-031c/ ",
+        "desc": "For this Delivery App, I took alot of inspiration from apps like deliveroo, Foodpanda , Grab and Ubereats. There is a home page , review page , product page , product description page, processing page , payment page and a thank you page. The colour scheme is also based on the Flash which explains the design with the lightning bolt in the middle of the wok and wheel also the name wok + wheel = wokeel. If you would like to withness the work the link is down below!  ",
         "images": ["images/C218L07.png","images/C218L07Review.png","images/C218L07Food.png","images/C218L07Display.png","images/C218L07Process.png","images/C218L07Pay.png","images/C218L07TY.png"],
         "icons":["icons/illustrator.png","icons/photoshop.png","icons/xd.png"],
         "links": {

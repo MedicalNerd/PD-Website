@@ -126,7 +126,7 @@
         </nav>
     </header>
     <div class="Contact">
-        <form name="submit-to-google-sheet">
+        <form name="submit-to-google-sheet" action="index.html">
                <div class="heading">
                 <h1>Want to Contact Me?</h1>
                 <h4>Input your details down below!</h4>
@@ -150,7 +150,7 @@
                     <textarea id="message" rows="8" name="Message" required></textarea>
                     <label for="message">Your Message</label>
                 </div>
-                <button class="glow-on-hover" type="submit">Submit</button>
+                <button onclick="myFunction()" class="glow-on-hover" type="submit">Submit</button>
                 
                 
         </form>
@@ -173,8 +173,14 @@
             </div>
         </div>
         </footer>
-
+        
         <script>
+            function myFunction() {
+                alert("Form Submitted!");
+            }
+        </script>
+        <script>
+        
             const scriptURL = 'https://script.google.com/macros/s/AKfycby_TeOPCfijP648mXpw7HWJ8d50qVwCuoxiuHnA3iHD975iFYwDHkEtLzv4vgNTaxVCPA/exec'
             const form = document.forms['submit-to-google-sheet']
           
