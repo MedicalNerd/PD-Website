@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image.classList.add("gallery");
 
             card.appendChild(image);
-            // document.getElementById("yessir").appendChild(card);
+        
         })
         worksInfo[id].icons.forEach((e) => {
             let card = document.createElement("div");
