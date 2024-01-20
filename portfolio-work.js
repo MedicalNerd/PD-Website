@@ -48,7 +48,7 @@ const worksInfo = {
     },
     "world-explore":{
         "title": "World Xplore Page",
-        "desc": "Using Both HTML + CSS I designed a Travel Page with a video of Sakura Flowers playing in the background with the color scheme representing the beautiful sakura colours of the flowers. The pictures have special hover animation which allows for them to spin and a destination page which will direct users to specific pages describing the countries listed like Japan Thailand and Malaysia. The is also a Contact Us Form which requires input for every column or it will not allow the user to continue. It also involves a Javascript which will display a different background image in mobile mode with a 50% chance of dispaying one image or the other. Do Check the page out on my github! https://medicalnerd.github.io/C219_L05/",
+        "desc": "Using Both HTML + CSS I designed a Travel Page with a video of Sakura Flowers playing in the background with the color scheme representing the beautiful sakura colours of the flowers. The pictures have special hover animation which allows for them to spin and a destination page which will direct users to specific pages describing the countries listed like Japan Thailand and Malaysia. The is also a Contact Us Form which requires input for every column or it will not allow the user to continue. It also involves a Javascript which will display a different background image in mobile mode with a 50% chance of dispaying one image or the other. Do Check the page out on my github link is below!",
         "images": ["images/C219L04.png","images/worldXplore.png","images/worldXploreDes.png"],
         "icons":["icons/html.png","icons/css.png"],
         "links": {
